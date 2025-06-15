@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e0e; /*이미지의 맨 밑색에 맞추기 위해서 샘플을 따로 구해 색상을 입혔습니다..*/
+  color: #ffffff;
+}
+
+.hero {
+  background: url('https://i.imgur.com/eRQ9Omg.jpeg') center/cover no-repeat; /*이미지는 imgur 사이트를 이용하여 이미지 업로드를 하였고 url링크를 사용하였습니다.*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.overlay h2 {
+  color: orange; /*도시의 현광들 이미지를 이용하기 위해 오랜지 혹은 노란 색을 사용하였습니다. 색은 따로 RGB를 적용하지 않아도 미관이 괜찮아서 간단하게 적용하였습니다.*/
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about .content, .portfolio .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about h3, .portfolio h3, .contact h3 {
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+.profile-img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.item {
+  background: #1c1c1c;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.item:hover {
+  background: orange;
+  color: #000;
+  cursor: pointer;
+}
+
+.contact {
+  text-align: center;
+  background: #1a1a1a;
+}
+
+.contact-items p {
+  margin: 0.3rem;
+  color: #bbb;
+}
